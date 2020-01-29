@@ -9,22 +9,24 @@ reddit = praw.Reddit(client_id='sL-KeSmcQP6U1w',
                      user_agent='meme_api',
                      username='meme_api')
 
-def random_meme():
-    sub = random.choice(randommeme)
+def check_image(urllink):
+
+
+def get_meme(sub,count):
     sub_reddit = reddit.subreddit(sub)
-    hot_meme = sub_reddit.hot(limit=100)
+    hot_meme = sub_reddit.hot(limit=count)
 
     for submissions in hot_meme:
-        print(submissions.title)
+        result = {"Title": submissions.title,
+                  "Url": submissions.url,
+                  "Upvotes": submissions.ups,
+                  "Downvotes": submissions.downs,
+                  "Subreddit": submissions.subreddit,
+                  "Redditurl": submissions.shortlink
+                  }
+        print(result)
 
-    return True
 
-def get_meme(sub):
-    sub_reddit = reddit.subreddit(sub)
-    hot_meme = sub_reddit.hot(limit=100)
 
-    for submissions in hot_meme:
-        print(submissions.title)
-
-get_meme('memes')
+get_meme('dankmeme',5)
 
