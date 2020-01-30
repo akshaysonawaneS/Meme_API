@@ -1,7 +1,5 @@
 import praw
-import random
 
-randommeme = ['meme','dankmeme','wholesomeme','memes']
 
 reddit = praw.Reddit(client_id='sL-KeSmcQP6U1w',
                      client_secret='oOgusUP9BBgZyhTQPoaIrdXBP3Q',
@@ -10,23 +8,30 @@ reddit = praw.Reddit(client_id='sL-KeSmcQP6U1w',
                      username='meme_api')
 
 def check_image(urllink):
+    ext = urllink[-4:]
+    if ext == '.jpg' or ext == '.png':
+        return True
+
+    return False
 
 
 def get_meme(sub,count):
     sub_reddit = reddit.subreddit(sub)
     hot_meme = sub_reddit.hot(limit=count)
-
+    result =[]
     for submissions in hot_meme:
-        result = {"Title": submissions.title,
+        temp = {"Title": submissions.title,
                   "Url": submissions.url,
                   "Upvotes": submissions.ups,
                   "Downvotes": submissions.downs,
-                  "Subreddit": submissions.subreddit,
-                  "Redditurl": submissions.shortlink
+                  "Redditurl": submissions.shortlink,
+                  "Subreddit": sub
                   }
-        print(result)
+        result.append(temp)
+
+    return result
 
 
 
-get_meme('dankmeme',5)
+
 
