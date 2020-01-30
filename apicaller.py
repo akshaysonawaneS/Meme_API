@@ -129,7 +129,7 @@ def multiple_from_sub(sub, c):
 @app.errorhandler(404)
 @app.route('/<lol>')
 def not_found(lol):
-    return "Are You Lost?"
+    return "<h1>Are You Lost?<h1>"
 
 
 if __name__ == '__main__':
