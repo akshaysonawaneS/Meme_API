@@ -72,5 +72,25 @@ Endpoint: https://still-river-65459.herokuapp.com/givememe/<Subredditname>/<coun
 Example: https://still-river-65459.herokuapp.com/givememe/wholesomeme/2
 
 ```
-
+{
+  "count": 2,
+  "memes": [
+    {
+      "Downvotes": 0,
+      "Redditurl": "https://redd.it/ca0d3r",
+      "Subreddit": "wholesomemes",
+      "Title": "Probably a repost but I love it. 🥰",
+      "Upvotes": 124,
+      "Url": "https://i.redd.it/ph1c8s8psr831.jpg"
+    },
+    {
+      "Downvotes": 0,
+      "Redditurl": "https://redd.it/dmdis4",
+      "Subreddit": "wholesomemes",
+      "Title": "Wholesome McDonald's",
+      "Upvotes": 110,
+      "Url": "https://i.redd.it/zm2qjx3qocu31.jpg"
+    }
+  ]
+}
 ```
