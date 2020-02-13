@@ -1,6 +1,6 @@
 # Meme API from reddit
 
-#### How to use API:
+### How to use API:
 
 Api Link : https://still-river-65459.herokuapp.com/givememe
 
@@ -16,9 +16,9 @@ Api Link : https://still-river-65459.herokuapp.com/givememe
 }
 ```
 
-#### Custom :
+### Custom :
 
-##### Custom Count (MAX 50)
+#### Custom Count (MAX 50)
 
 Endpoint: https://still-river-65459.herokuapp.com/givememe/<Count>
 
@@ -49,7 +49,7 @@ Response:
 }
 ```
 
-##### Custom Subreddit
+#### Custom Subreddit
 
 Endpoint: https://still-river-65459.herokuapp.com/givememe/<Subredditname>
 
@@ -65,7 +65,7 @@ Example: https://still-river-65459.herokuapp.com/givememe/dankmeme
   "Url": "https://i.redd.it/ibyvs9qvz3g41.png"
 }
 ```
-##### Custom Subreddit count (MAX 50)
+#### Custom Subreddit count (MAX 50)
 
 Endpoint: https://still-river-65459.herokuapp.com/givememe/<Subredditname>/<count>
 
