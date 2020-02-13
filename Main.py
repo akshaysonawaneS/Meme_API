@@ -31,7 +31,20 @@ def get_meme(sub,count):
 
     return result
 
+def get_text(sub,count):
+    sub_reddit = reddit.subreddit(sub)
+    hot_meme = sub_reddit.hot(limit=count)
+    result=[]
+    for submission in hot_meme:
+        temp = {"Title": submission.title,
+                "Selftext": submission.selftext
+                "Upvotes": submission.ups,
+                "Downvotes": submission.downs,
+                "Redditurl": submission.shortlink,
+                "Subreddit": sub
+                }
+        result.append(temp)
 
 
-
+    return result
 

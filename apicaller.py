@@ -1,6 +1,7 @@
 from flask import Flask,jsonify
 import random,logging
-from Main import get_meme, check_image
+from Main import get_meme, check_image, get_text
+
 app = Flask(__name__)
 count = 0
 randommeme = ['meme','dankmeme','wholesomeme','memes']
@@ -125,6 +126,33 @@ def multiple_from_sub(sub, c):
         })
 
 
+@app.route('/givetext/<sub>')
+def random_meme(sub):              #showerthoughts or quotes
+    r = get_meme(sub,100)
+    requsted = random.choice(r)
+
+    return jsonify({
+        'Title':requsted["Title"],
+        'Selftext': requsted["Selftext"],
+        'Upvotes': requsted["Upvotes"],
+        'Downvotes': requsted["Downvotes"],
+        'Redditurl': requsted["Redditurl"],
+        'Subreddit': requsted["Subreddit"]
+    })
+
+@app.route('/givetext/<sub>/<int:count>')
+def random_meme(sub,count):              #showerthoughts or quotes
+    r = get_text(sub ,count)
+    requsted = random.choice(r)
+
+    return jsonify({
+        'Title':requsted["Title"],
+        'Selftext': requsted["Selftext"],
+        'Upvotes': requsted["Upvotes"],
+        'Downvotes': requsted["Downvotes"],
+        'Redditurl': requsted["Redditurl"],
+        'Subreddit': requsted["Subreddit"]
+    })
 
 @app.errorhandler(404)
 @app.route('/<lol>')
