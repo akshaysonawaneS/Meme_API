@@ -90,7 +90,7 @@ def multiple(c):
         })
 
 
-@app.route('/<sub>/<int:c>')
+@app.route('givememe/<sub>/<int:c>')
 def multiple_from_sub(sub, c):
 
 

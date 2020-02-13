@@ -70,3 +70,7 @@ Example: https://still-river-65459.herokuapp.com/givememe/dankmeme
 Endpoint: https://still-river-65459.herokuapp.com/givememe/<Subredditname>/<count>
 
 Example: https://still-river-65459.herokuapp.com/givememe/wholesomeme/2
+
+```
+
+```
