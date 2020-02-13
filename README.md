@@ -2,7 +2,7 @@
 
 ### How to use API:
 
-Api Link : https://still-river-65459.herokuapp.com/givememe
+Api Link : https://meme-api11.herokuapp.com/givememe
 
 #### Example Response:
 ```
@@ -20,9 +20,9 @@ Api Link : https://still-river-65459.herokuapp.com/givememe
 
 #### Custom Count (MAX 50)
 
-Endpoint: https://still-river-65459.herokuapp.com/givememe/<Count>
+Endpoint:https://meme-api11.herokuapp.com/givememe/<Count>
 
-Example: https://still-river-65459.herokuapp.com/givememe/2
+Example: https://meme-api11.herokuapp.com/givememe/2
 
 Response:
 ```
@@ -51,9 +51,9 @@ Response:
 
 #### Custom Subreddit
 
-Endpoint: https://still-river-65459.herokuapp.com/givememe/<Subredditname>
+Endpoint: https://meme-api11.herokuapp.com/givememe/<Subredditname>
 
-Example: https://still-river-65459.herokuapp.com/givememe/dankmeme
+Example: https://meme-api11.herokuapp.com/givememe/dankmeme
 
 ```
 {
@@ -67,9 +67,9 @@ Example: https://still-river-65459.herokuapp.com/givememe/dankmeme
 ```
 #### Custom Subreddit count (MAX 50)
 
-Endpoint: https://still-river-65459.herokuapp.com/givememe/<Subredditname>/<count>
+Endpoint: https://meme-api11.herokuapp.com/givememe/<Subredditname>/<count>
 
-Example: https://still-river-65459.herokuapp.com/givememe/wholesomeme/2
+Example: https://meme-api11.herokuapp.com/givememe/wholesomeme/2
 
 ```
 {
