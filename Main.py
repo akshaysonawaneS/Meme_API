@@ -1,6 +1,6 @@
 import praw
 
-
+#new
 reddit = praw.Reddit(client_id='sL-KeSmcQP6U1w',
                      client_secret='oOgusUP9BBgZyhTQPoaIrdXBP3Q',
                      password='akshay@123',
