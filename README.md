@@ -94,3 +94,48 @@ Example: https://meme-api11.herokuapp.com/givememe/wholesomeme/2
   ]
 }
 ```
+#### Text Subreddit (Eg showerthoughts,quotes)
+
+Endpoint: https://meme-api11.herokuapp.com/givetext/<Subredditname>
+
+Example: https://meme-api11.herokuapp.com/givememe/quotes
+
+```
+{
+  "Downvotes": 0,
+  "Redditurl": "https://redd.it/f374yi",
+  "Selftext": "No selftext Present",
+  "Subreddit": "quotes",
+  "Title": "\"Almost everything will work again if you unplug it for a few minutes, including you.\" - Anne Lamott",
+  "Upvotes": 21
+}
+```
+#### Text Subreddit Count(MAX 50)
+
+Endpoint: https://meme-api11.herokuapp.com/givetext/<Subredditname>/<count>
+
+Example: https://meme-api11.herokuapp.com/givememe/showerthoughts/2
+
+```
+{
+  "count": 2,
+  "sub": [
+    {
+      "Downvotes": 0,
+      "Redditurl": "https://redd.it/f3kyt6",
+      "Selftext": "No selftext Present",
+      "Subreddit": "showerthoughts",
+      "Title": "Calling your hair pulled back a “ponytail” makes your head a pony’s ass.",
+      "Upvotes": 1227
+    },
+    {
+      "Downvotes": 0,
+      "Redditurl": "https://redd.it/f3mp7x",
+      "Selftext": "No selftext Present",
+      "Subreddit": "showerthoughts",
+      "Title": "Pinocchio is a puppet because he was easily manipulated (like how a puppet is controlled by a puppeteer. Only after he learned to think for himself was when he became a real boy.",
+      "Upvotes": 19
+    }
+  ]
+}
+```
