@@ -127,13 +127,13 @@ def multiple_from_sub(sub, c):
 
 
 @app.route('/givetext/<sub>')
-def random_meme(sub):              #showerthoughts or quotes
-    r = get_meme(sub,100)
+def text_meme(sub):              #showerthoughts or quotes
+    r = get_text(sub,100)
     requsted = random.choice(r)
 
     return jsonify({
-        'Title':requsted["Title"],
-        'Selftext': requsted["Selftext"],
+        'Title': requsted["Title"],
+        'Selftext': requsted["text"],
         'Upvotes': requsted["Upvotes"],
         'Downvotes': requsted["Downvotes"],
         'Redditurl': requsted["Redditurl"],
@@ -141,7 +141,7 @@ def random_meme(sub):              #showerthoughts or quotes
     })
 
 @app.route('/givetext/<sub>/<int:count>')
-def random_meme(sub,count):              #showerthoughts or quotes
+def text_count_meme(sub,count):              #showerthoughts or quotes
     r = get_text(sub ,count)
     requsted = random.choice(r)
 
