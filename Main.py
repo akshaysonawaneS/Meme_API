@@ -55,6 +55,7 @@ def get_text(sub,count):
                     }
 
         result.append(temp)
-
     return result
+    #print(result)
 
+#get_text("showerthoughts",5)
