@@ -2,7 +2,7 @@
 
 ### How to use API:
 
-Api Link : https://meme-api11.herokuapp.com/givememe
+Api Link : https://memeapi26.herokuapp.com/givememe
 
 #### Example Response:
 ```
@@ -20,9 +20,9 @@ Api Link : https://meme-api11.herokuapp.com/givememe
 
 #### Custom Count (MAX 50)
 
-Endpoint:https://meme-api11.herokuapp.com/givememe/<Count>
+Endpoint: https://memeapi26.herokuapp.com/ivememe/<Count>
 
-Example: https://meme-api11.herokuapp.com/givememe/2
+Example: https://memeapi26.herokuapp.com/givememe/2
 
 Response:
 ```
@@ -51,9 +51,9 @@ Response:
 
 #### Custom Subreddit
 
-Endpoint: https://meme-api11.herokuapp.com/givememe/<Subredditname>
+Endpoint: https://memeapi26.herokuapp.com/givememe/<Subredditname>
 
-Example: https://meme-api11.herokuapp.com/givememe/dankmeme
+Example: https://memeapi26.herokuapp.com/givememe/dankmeme
 
 ```
 {
@@ -67,9 +67,9 @@ Example: https://meme-api11.herokuapp.com/givememe/dankmeme
 ```
 #### Custom Subreddit count (MAX 50)
 
-Endpoint: https://meme-api11.herokuapp.com/givememe/<Subredditname>/<count>
+Endpoint: https://memeapi26.herokuapp.com/givememe/<Subredditname>/<count>
 
-Example: https://meme-api11.herokuapp.com/givememe/wholesomeme/2
+Example: https://memeapi26.herokuapp.com/givememe/wholesomeme/2
 
 ```
 {
@@ -96,9 +96,9 @@ Example: https://meme-api11.herokuapp.com/givememe/wholesomeme/2
 ```
 #### Text Subreddit (Eg showerthoughts,quotes)
 
-Endpoint: https://meme-api11.herokuapp.com/givetext/<Subredditname>
+Endpoint: https://memeapi26.herokuapp.com/givetext/<Subredditname>
 
-Example: https://meme-api11.herokuapp.com/givememe/quotes
+Example: https://memeapi26.herokuapp.com/givetext/quotes
 
 ```
 {
@@ -112,9 +112,9 @@ Example: https://meme-api11.herokuapp.com/givememe/quotes
 ```
 #### Text Subreddit Count(MAX 50)
 
-Endpoint: https://meme-api11.herokuapp.com/givetext/<Subredditname>/<count>
+Endpoint: https://memeapi26.herokuapp.com/givetext/<Subredditname>/<count>
 
-Example: https://meme-api11.herokuapp.com/givememe/showerthoughts/2
+Example: https://memeapi26.herokuapp.com/givetext/showerthoughts/2
 
 ```
 {
